@@ -1,0 +1,25 @@
+/* 
+criar bolas branca (fundo)
+*/
+
+.fundo {
+    background-color: rgb(236, 236, 236);
+    width: 700px;
+    height: 600px;
+    display: flex;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 5px;
+    height: 100%;
+    width: 100px;
+    background-color: brown;
+}
+
+.disco {
+    background-color: rgb(4, 0, 255);
+    width: 100px;
+    height: 100px;
+}
