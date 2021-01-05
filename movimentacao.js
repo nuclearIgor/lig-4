@@ -27,7 +27,7 @@ let jogador = "P1"
 
 function trocaJogador(){
     if(jogador === "P1"){jogador = "P2"}
-    else {jogador = "P1"}
+    else{jogador = "P1"}
     return jogador
 }
 
