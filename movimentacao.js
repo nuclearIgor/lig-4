@@ -55,54 +55,11 @@ function soltaDisco(e){
     let colunaPai = document.getElementById(coluna.toString())
     let disco = criaDisco(jogador)
     colunaPai.appendChild(disco)
-<<<<<<< HEAD
-=======
     condicaoVitoria()
->>>>>>> master
     trocaJogador()
     
 }
 criaColunas()
 implementaColunasNoDom()
 addHandlerNasColunas()
-console.log(verificaVitoriaLinha())
 
-function verificaVitoriaLinha(){
-    for(let i = tabuleiro.length -1; i >= 0; i --){
-        for(j = 0; j < tabuleiro[i].length; j ++){
-            let elemento = tabuleiro[i][j]
-            let elementoAnterior = elemento
-            let contador = 0
-            if(elemento === elementoAnterior && elemento !== " "){
-             
-                if(elemento === "P1"){
-                    contador ++
-                    elementoAnterior = elemento
-                }
-                if(elemento === "P2"){
-                    contador ++
-                    elementoAnterior = elemento
-                }
-
-<<<<<<< HEAD
-            }
-            else if(elemento !== elementoAnterior){
-                if(elemento === "P1"){
-                    contador = 0
-                    contador ++
-                    elementoAnterior = elemento
-                }
-                if(elemento === "P2"){
-                    contador = 0
-                    contador ++
-                    elementoAnterior = elemento
-                }
-            }
-            if(contador === 4){return true}
-        }
-        return false
-    }
-}
-=======
-
->>>>>>> master
