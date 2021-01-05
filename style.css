@@ -1,10 +1,3 @@
-.coluna{
-    height: 200px;
-    width: 30px;
-    background-color: blue;
-    margin-bottom: 20px;
-    
-}
 /* 
 criar bolas branca (fundo)
 */
@@ -26,14 +19,7 @@ criar bolas branca (fundo)
 }
 
 .disco {
-    margin: 0 auto;
-    border-radius: 50%;
-    width: 90%;
+    background-color: rgb(4, 0, 255);
+    width: 100px;
     height: 100px;
-}
-.P1{
-    background-color: black;
-}
-.P2{
-    background-color: blanchedalmond;
 }
