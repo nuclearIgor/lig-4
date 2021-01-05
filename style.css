@@ -1,28 +1,47 @@
-.coluna{
-    height: 200px;
-    width: 30px;
-    background-color: blue;
-    margin-bottom: 20px;
-    
+html, body, section, main, div, h1, h2{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-/* 
-criar bolas branca (fundo)
-*/
+
+
+
+.filler{
+    border: 1px solid black;
+    width: 700px;
+    height: 660px;
+    display: flex;
+    z-index: -1;
+    position: absolute;
+
+    background-color: brown;
+}
 
 .fundo {
-    background-color: rgb(236, 236, 236);
     width: 700px;
-    height: 600px;
+    height: 660px;
     display: flex;
+    border: 1px solid black;
+
 }
 
 .coluna {
     display: flex;
     flex-direction: column-reverse;
-    margin: 5px;
+    margin: 2px;
     height: 100%;
     width: 100px;
-    background-color: brown;
+    /* background-color: brown; */
+    /* z-index: ; */
+}
+ 
+.colunafiller{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 2px;
+    height: 100%;
+    width: 100px;
+    
 }
 
 .disco {
@@ -31,6 +50,23 @@ criar bolas branca (fundo)
     width: 90%;
     height: 100px;
 }
+.circulofiller{
+    margin: 0 auto;
+    height: 100px;
+    width: 90%;
+    background-color: burlywood;
+    border: 1px dotted brown;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
 .P1{
     background-color: black;
 }
