@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .coluna{
     height: 200px;
     width: 30px;
@@ -5,3 +6,30 @@
     margin-bottom: 20px;
     
 }
+=======
+/* 
+criar bolas branca (fundo)
+*/
+
+.fundo {
+    background-color: rgb(236, 236, 236);
+    width: 700px;
+    height: 600px;
+    display: flex;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 5px;
+    height: 100%;
+    width: 100px;
+    background-color: brown;
+}
+
+.disco {
+    background-color: rgb(4, 0, 255);
+    width: 100px;
+    height: 100px;
+}
+>>>>>>> f7a609e3d253aad5d110d71f6a1141cf8825155d
