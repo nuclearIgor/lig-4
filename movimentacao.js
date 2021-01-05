@@ -55,7 +55,12 @@ function soltaDisco(e){
     let colunaPai = document.getElementById(coluna.toString())
     let disco = criaDisco(jogador)
     colunaPai.appendChild(disco)
+<<<<<<< HEAD
+=======
+    condicaoVitoria()
+>>>>>>> master
     trocaJogador()
+    
 }
 criaColunas()
 implementaColunasNoDom()
@@ -79,6 +84,7 @@ function verificaVitoriaLinha(){
                     elementoAnterior = elemento
                 }
 
+<<<<<<< HEAD
             }
             else if(elemento !== elementoAnterior){
                 if(elemento === "P1"){
@@ -97,3 +103,6 @@ function verificaVitoriaLinha(){
         return false
     }
 }
+=======
+
+>>>>>>> master
