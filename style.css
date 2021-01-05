@@ -1,8 +1,6 @@
-<<<<<<< HEAD
 /* 
 criar bolas branca (fundo)
 */
-=======
 html, body, section, main, div, h1, h2{
     margin: 0;
     padding: 0;
@@ -21,7 +19,6 @@ html, body, section, main, div, h1, h2{
 
     background-color: brown;
 }
->>>>>>> e1f2f0115515b6fe8138f6c5407646559b1581d8
 
 .fundo {
     width: 700px;
@@ -55,8 +52,6 @@ html, body, section, main, div, h1, h2{
     width: 100px;
     height: 100px;
 }
-<<<<<<< HEAD
-=======
 .circulofiller{
     margin: 0 auto;
     height: 100px;
@@ -80,4 +75,3 @@ html, body, section, main, div, h1, h2{
 .P2{
     background-color: blanchedalmond;
 }
->>>>>>> e1f2f0115515b6fe8138f6c5407646559b1581d8
