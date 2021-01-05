@@ -1,46 +1,51 @@
-
-function verificaVitoriaLinha(){
+function condicaoVitoria() {
     let vitoria = false
-    for(let i = 0; i < tabuleiro.length; i ++){
-        for(let j = 0; j < tabuleiro[i].length; j++){
-            if(tabuleiro[i][j] === jogador && tabuleiro[i+1][j+1] === jogador && tabuleiro[i+2][j+2] === jogador && tabuleiro[i+3][j+3] === jogador)
-            vitoria = true
-            console.log(vitoria)
+
+    for (let linha = tabuleiro.length -1; linha >= 0; linha --) {
+
+        for (let coluna = tabuleiro[linha].length -1; coluna >= 0; coluna --) {
+           
+            if ( tabuleiro[linha][coluna] === jogador 
+                && tabuleiro[linha - 1][coluna - 1] === jogador 
+                && tabuleiro[linha - 2][coluna - 2] === jogador 
+                && tabuleiro[linha - 3][coluna - 3] === jogador 
+                ) {
+                    vitoria = true
+                    console.log(vitoria +'dosSantos')
+                }
+        }
+
+        for (let coluna = 0; coluna < tabuleiro[linha].length; coluna ++) {
+
+            if ( tabuleiro[linha][coluna] === jogador 
+                && tabuleiro[linha][coluna + 1] === jogador 
+                && tabuleiro[linha][coluna + 2] === jogador 
+                && tabuleiro[linha][coluna + 3] === jogador 
+                ) {
+                    vitoria = true
+                    console.log(vitoria +'horizontalSantos')
+                }
+            
+             else if ( tabuleiro[linha][coluna] === jogador 
+                    && tabuleiro[linha - 1][coluna] === jogador 
+                    && tabuleiro[linha - 2][coluna] === jogador 
+                    && tabuleiro[linha - 3][coluna] === jogador 
+                    ) {
+                        vitoria = true
+                        console.log(vitoria +'verticalSantos')
+                    }
+
+            else if ( tabuleiro[linha][coluna] === jogador 
+                    && tabuleiro[linha - 1][coluna + 1] === jogador 
+                    && tabuleiro[linha - 2][coluna + 2] === jogador 
+                    && tabuleiro[linha - 3][coluna + 3] === jogador 
+                    ) {
+                        vitoria = true
+                        console.log(vitoria +'MenosSantos')
+                    }
+
         }
     }
-    return vitoria
-    /*let resultado = false
-    let contador = 0
-    for(let i = tabuleiro.length -1; i >= 0; i --){
-        for(j = 0; j < tabuleiro[i].length; j ++){
-            let elemento = tabuleiro[i][j]
-            let elementoAnterior = elemento
-            if(elemento === elementoAnterior && elemento !== " "){
-                if(elemento === "P1"){
-                    contador ++
-                    elementoAnterior = elemento
-                }
-                if(elemento === "P2"){
-                    contador ++
-                    elementoAnterior = elemento
-                }
 
-            }
-            else if(elemento !== elementoAnterior){
-                if(elemento === "P1"){
-                    contador = 0
-                    contador ++
-                    elementoAnterior = elemento
-                }
-                if(elemento === "P2"){
-                    contador = 0
-                    contador ++
-                    elementoAnterior = elemento
-                }
-            }
-            if(contador === 4){resultado = true}
-        }
-        console.log(resultado)
-        return resultado
-    }*/
+    return vitoria
 }
