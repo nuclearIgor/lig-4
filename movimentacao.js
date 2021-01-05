@@ -58,7 +58,7 @@ function soltaDisco(e){
     let colunaPai = document.getElementById(coluna.toString())
     let disco = criaDisco(jogador)
     colunaPai.appendChild(disco)
-    // verificar vitória
+    verificaVitoriaLinha()
     trocaJogador()
 }
 criaColunas()
