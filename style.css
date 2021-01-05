@@ -1,4 +1,4 @@
-html, body, section, main, div, h1, h2{
+html, body, section, main, div, h1, h2 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,7 +6,7 @@ html, body, section, main, div, h1, h2{
 
 
 
-.filler{
+.filler {
     border: 1px solid black;
     width: 700px;
     height: 660px;
@@ -35,7 +35,7 @@ html, body, section, main, div, h1, h2{
     /* z-index: ; */
 }
  
-.colunafiller{
+.colunafiller {
     display: flex;
     flex-direction: column-reverse;
     margin: 2px;
@@ -50,6 +50,7 @@ html, body, section, main, div, h1, h2{
     width: 90%;
     height: 100px;
 }
+
 .circulofiller{
     margin: 0 auto;
     height: 100px;
