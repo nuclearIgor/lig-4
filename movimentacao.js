@@ -6,6 +6,9 @@ const tabuleiro = [
     [" "," "," "," "," "," "," "],
     [" "," "," "," "," "," "," "]
 ]
+
+
+
 function criaColunas(){
     const colunas = []
     for(let i = 0; i < 7; i ++){
@@ -19,7 +22,7 @@ function criaColunas(){
 
 function implementaColunasNoDom(){
     const colunas = criaColunas()
-    let paiDasColunas = document.body
+    let paiDasColunas = document.querySelector('.fundo')
     colunas.forEach((coluna) => paiDasColunas.appendChild(coluna))
 }
 
@@ -27,7 +30,7 @@ let jogador = "P1"
 
 function trocaJogador(){
     if(jogador === "P1"){jogador = "P2"}
-    else {jogador = "P1"}
+    else{jogador = "P1"}
     return jogador
 }
 
@@ -55,8 +58,13 @@ function soltaDisco(e){
     let colunaPai = document.getElementById(coluna.toString())
     let disco = criaDisco(jogador)
     colunaPai.appendChild(disco)
+    condicaoVitoria()
     trocaJogador()
+    
 }
 criaColunas()
 implementaColunasNoDom()
 addHandlerNasColunas()
+
+
+
