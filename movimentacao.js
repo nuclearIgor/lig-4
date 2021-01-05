@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const tabuleiro = [
     [" "," "," "," "," "," "," "],
     [" "," "," "," "," "," "," "],
@@ -61,7 +60,3 @@ function soltaDisco(e){
 criaColunas()
 implementaColunasNoDom()
 addHandlerNasColunas()
-=======
-
-
->>>>>>> f7a609e3d253aad5d110d71f6a1141cf8825155d

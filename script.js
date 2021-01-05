@@ -7,6 +7,8 @@
 //
 /* */
 
+[0, 1 , 2  ]
+
 const fundo = document.querySelector('.fundo')
 
 const caixa = () => {
@@ -25,7 +27,7 @@ caixa()
 const criaDisco = (jogador) => {
     const disco = document.createElement('div')
     disco.className = `${jogador}`
-    
+
 }
 
 
