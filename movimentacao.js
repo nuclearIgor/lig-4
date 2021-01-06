@@ -58,9 +58,11 @@ function soltaDisco(e){
     colunaPai.appendChild(disco)
     condicaoVitoria()
     trocaJogador()
+    incrementadordejogadas()
     
 }
 criaColunas()
 implementaColunasNoDom()
 addHandlerNasColunas()
+
 

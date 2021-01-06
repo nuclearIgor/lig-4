@@ -14,6 +14,8 @@ const criafundo3d = ()=> {
 }
 criafundo3d()
 
+
+
 const telaStart = () => {
 
     let fundoStart = document.createElement('div')
@@ -88,3 +90,19 @@ const adicionaEventoReset = () => {
 }
 
 adicionaEventoReset()
+
+let jogadas = 0
+
+const incrementadordejogadas=()=>{
+    if(jogadas < tabuleiro.length * tabuleiro[0].length){
+        jogadas+=1
+        return jogadasnatela()
+    }
+
+}
+
+const jogadasnatela = ()=>{
+    const espaconatela = document.getElementById('contadordejogadas')
+    return espaconatela.innerText = jogadas
+}
+
