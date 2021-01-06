@@ -49,3 +49,22 @@ function condicaoVitoria() {
 
     return vitoria
 }
+
+function deuEmpate(){
+    let vitoria = condicaoVitoria()
+    let linha
+    let coluna
+    let empate = false
+    let espacosCheios = 0
+    for (linha = tabuleiro.length -1; linha >= 0; linha --) {
+        for (coluna = tabuleiro[linha].length -1; coluna >= 0; coluna --) {
+            if(tabuleiro[linha][coluna] !== " "){
+                espacosCheios ++
+            }
+        }
+    }
+    if(espacosCheios === tabuleiro.length * tabuleiro[linha].length && vitoria === false){
+        empate = true
+    }
+    return empate
+}
