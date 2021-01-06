@@ -1,4 +1,4 @@
-const criafundo3d = ()=>{
+const criafundo3d = ()=> {
     let filler = document.querySelector('.filler')
     
     for(let i = 0; i < 7; i++){
@@ -13,3 +13,45 @@ const criafundo3d = ()=>{
     }
 }
 criafundo3d()
+
+const telaStart = () => {
+
+    let fundoStart = document.createElement('div')
+    fundoStart.classList.add('fundoStart')
+
+    document.body.appendChild(fundoStart)
+
+    let nomeJogo = document.createElement('div')
+    nomeJogo.textContent = 'LIG-4 TURBO'
+    nomeJogo.classList.add('nomeJogo')
+
+    document.querySelector('.fundoStart').appendChild(nomeJogo)
+
+}
+telaStart()
+
+
+const carregarTelaJogo = () => {
+    let nomeJogo = document.querySelector('.nomeJogo')
+    let fundoStart = document.querySelector('.fundoStart')
+    let buttonStart = document.querySelector('#botao-start')
+    let botaoReset = document.querySelector('#botao-reset')
+    let main = document.querySelector('#main')
+
+    nomeJogo.classList.add('hidden')
+    fundoStart.classList.add('hidden')
+    buttonStart.classList.add('hidden')
+    botaoReset.classList.remove('hidden')
+    main.classList.remove('hidden')
+    main.classList.remove('hidden')
+
+
+}
+
+const adicionaEventoBotaoStart = () => {
+    let buttonStart = document.querySelector('#botao-start')
+
+    buttonStart.addEventListener('click', carregarTelaJogo )
+}
+
+adicionaEventoBotaoStart()
