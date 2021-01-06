@@ -6,9 +6,6 @@ const tabuleiro = [
     [" "," "," "," "," "," "," "],
     [" "," "," "," "," "," "," "]
 ]
-
-
-
 function criaColunas(){
     const colunas = []
     for(let i = 0; i < 7; i ++){
@@ -22,7 +19,7 @@ function criaColunas(){
 
 function implementaColunasNoDom(){
     const colunas = criaColunas()
-    let paiDasColunas = document.querySelector('.fundo')
+    let paiDasColunas = document.querySelector(".fundo")
     colunas.forEach((coluna) => paiDasColunas.appendChild(coluna))
 }
 
@@ -65,6 +62,4 @@ function soltaDisco(e){
 criaColunas()
 implementaColunasNoDom()
 addHandlerNasColunas()
-
-
 
