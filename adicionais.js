@@ -30,7 +30,6 @@ const telaStart = () => {
 }
 telaStart()
 
-
 const carregarTelaJogo = () => {
     let nomeJogo = document.querySelector('.nomeJogo')
     let fundoStart = document.querySelector('.fundoStart')
@@ -45,7 +44,6 @@ const carregarTelaJogo = () => {
     main.classList.remove('hidden')
     main.classList.remove('hidden')
 
-
 }
 
 const adicionaEventoBotaoStart = () => {
@@ -55,3 +53,38 @@ const adicionaEventoBotaoStart = () => {
 }
 
 adicionaEventoBotaoStart()
+
+
+const resetaJogo = () => {
+    //colocar reset time
+    //reset jogador atual
+    //contagem de jogadas
+
+    for (let linha = tabuleiro.length -1; linha >= 0; linha --) {
+
+        for (let coluna = tabuleiro[linha].length -1; coluna >= 0; coluna --) {
+
+            tabuleiro[linha][coluna] = ' '
+
+        }
+    } 
+
+    let todasColunas = document.querySelectorAll('.coluna')
+
+    for(let i = 0; i < todasColunas.length; i++) {
+        todasColunas[i].innerHTML = ''
+    }
+
+
+   
+}
+
+
+const adicionaEventoReset = () => {
+    let botaoReset = document.querySelector('#botao-reset')
+
+    botaoReset.addEventListener('click', resetaJogo)
+
+}
+
+adicionaEventoReset()
