@@ -1,4 +1,11 @@
+<<<<<<< HEAD
+/* 
+criar bolas branca (fundo)
+*/
+html, body, section, main, div, h1, h2{
+=======
 html, body, section, main, div, h1, h2 {
+>>>>>>> master
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -45,9 +52,8 @@ html, body, section, main, div, h1, h2 {
 }
 
 .disco {
-    margin: 0 auto;
-    border-radius: 50%;
-    width: 90%;
+    background-color: rgb(4, 0, 255);
+    width: 100px;
     height: 100px;
 }
 
