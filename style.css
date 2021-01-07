@@ -23,6 +23,11 @@ body {
 }
 
 .vitoria {
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     height: 400px;
     width: 500px;
     color: burlywood;
@@ -234,3 +239,17 @@ body {
     background-color: rgb(80, 80, 105);
     margin: 0 auto;
 }
+
+ 
+.coluna > .disco{
+    animation-name: queda;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-direction: reverse;
+  }
+
+
+  @keyframes queda {
+    from {transform: translate(0px,0px)}
+    to {transform: translate(0px, -700px)}
+  }

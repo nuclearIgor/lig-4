@@ -76,7 +76,7 @@ const resetaJogo = () => {
     //reseta disco turno jogador
     jogador = "P1"
     exibeturnoatual()
-
+   
     jogadas = 0
    
 }

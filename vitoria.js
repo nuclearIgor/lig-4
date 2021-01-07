@@ -104,6 +104,8 @@ function criaTelaFinal(vitoria, deuEmpate){
         
         //cria tela vitoria
         div.firstElementChild.classList.remove("hidden")
+        div.firstElementChild.innerText = `Você venceu!!`
+        div.firstElementChild.appendChild(criaDisco(jogador))
         div.classList.remove("hidden")
         botaoJogaNovamente.classList.add("botaoJogarNovamente")
         botaoJogaNovamente.classList.remove("botao-reset")
@@ -112,12 +114,16 @@ function criaTelaFinal(vitoria, deuEmpate){
         
 
         return div
-    }
+     }
 
     if(deuEmpate === true){
         //cria tela empate
         div.lastElementChild.classList.remove("hidden")
         div.classList.remove("hidden")
+        div.lastElementChild.innerText = `Empate!!`
+        div.lastElementChild.appendChild(criaDisco(jogador))
+        trocaJogador()
+        div.lastElementChild.appendChild(criaDisco(jogador))
         botaoJogaNovamente.classList.add("botaoJogarNovamente")
         botaoJogaNovamente.classList.remove("botao-reset")
         
