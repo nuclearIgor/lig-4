@@ -234,3 +234,12 @@ body {
     background-color: rgb(80, 80, 105);
     margin: 0 auto;
 }
+
+.coluna > .disco{
+    /* animation: reverse; */
+    animation: 1.5s ease-in reverse both running move;
+}
+@keyframes move {
+    from {transform: translate(0px,0px)}
+    to {transform: translate(0px, -470px)}
+  }
