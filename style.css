@@ -235,11 +235,16 @@ body {
     margin: 0 auto;
 }
 
+ 
 .coluna > .disco{
-    /* animation: reverse; */
-    animation: 1.5s ease-in reverse both running move;
-}
-@keyframes move {
+    animation-timing-function: ease-in;
+    animation-name: queda;
+    animation-duration: 1s;
+    animation-direction: reverse;
+  }
+
+
+  @keyframes queda {
     from {transform: translate(0px,0px)}
-    to {transform: translate(0px, -470px)}
+    to {transform: translate(0px, -700px)}
   }
