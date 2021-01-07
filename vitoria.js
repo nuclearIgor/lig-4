@@ -78,22 +78,22 @@ const novavitoria = (horizontal, vertical, diagonalA, diagonalB)=>{
 }
 
 function deuEmpate(){
-    // let vitoria = novavitoria()
-    let linha = tabuleiro.length -2
-    let coluna = tabuleiro[linha].length -1
     let empate = false
     let espacosCheios = 0
-    for (linha; linha >= 0; linha --) {
-        for (coluna; coluna >= 0; coluna --) {
+    for (let linha = tabuleiro.length -1; linha > 0; linha --) { 
+        for (let coluna = tabuleiro[linha].length -1; coluna >= 0; coluna --) {
             if(tabuleiro[linha][coluna] !== " "){
                 espacosCheios ++
             }
         }
     }
     
-    if(espacosCheios === tabuleiro.length * tabuleiro[linha + 1].length && novavitoria() === false){
+    if(espacosCheios === (tabuleiro.length -1) * tabuleiro[0 + 1].length) {
         empate = true
     }
+
+    console.log(espacosCheios)
+    console.log(empate)
     return empate
 }
 
@@ -106,6 +106,7 @@ function criaTelaFinal(vitoria, deuEmpate){
         div.classList.add("vitoria")
         div.classList.remove("hidden")
 
+        return div
     }
 
     if(deuEmpate === true){
@@ -113,5 +114,7 @@ function criaTelaFinal(vitoria, deuEmpate){
         div.classList.add("empate")
         div.classList.remove("hidden")
         
+        return div
     }
+
 }
