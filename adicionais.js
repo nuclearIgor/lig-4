@@ -1,4 +1,3 @@
-
 const telaStart = () => {
 
     let fundoStart = document.createElement('div')
@@ -41,9 +40,6 @@ adicionaEventoBotaoStart()
 
 
 const resetaJogo = () => {
-    //colocar reset time
-    //reset jogador atual
-    //contagem de jogadas
 
     for (let linha = tabuleiro.length -1; linha >= 0; linha --) {
 
@@ -65,6 +61,7 @@ const resetaJogo = () => {
     let botaoJogaNovamente = document.getElementById("botao-reset")
 
     div.firstElementChild.classList.add("hidden")
+    div.lastElementChild.classList.add("hidden")
     div.classList.add("hidden")
     botaoJogaNovamente.classList.remove("botaoJogarNovamente")
     botaoJogaNovamente.classList.add("botao-reset")

@@ -39,10 +39,18 @@ body {
 }
 
 .empate {
-    height: 300px;
-    width: 300px;
-    background-color: darkred;
+    font-size: 4rem;
+    align-items: center;
+    justify-content: center;
+    height: 480px;
+    width: 500px;
+    color: burlywood;
+    background-color: #251d4b;
     z-index: 2;
+    margin: 0 auto;
+    border: 2px solid #8805ff;
+    border-radius: 50px;
+    display: flex;
 }
 
 .fundoStart {
