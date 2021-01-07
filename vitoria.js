@@ -66,7 +66,7 @@ const diagonalpraesquerda=()=>{
                 }
         }
 
-}
+    }
 return resultado
 }
 
@@ -79,11 +79,11 @@ const novavitoria = (horizontal, vertical, diagonalA, diagonalB)=>{
 
 function deuEmpate(){
     // let vitoria = novavitoria()
-    let linha = tabuleiro.length -2
+    let linha = tabuleiro.length - 1
     let coluna = tabuleiro[linha].length -1
     let empate = false
     let espacosCheios = 0
-    for (linha; linha >= 0; linha --) {
+    for (linha; linha > 0; linha --) {
         for (coluna; coluna >= 0; coluna --) {
             if(tabuleiro[linha][coluna] !== " "){
                 espacosCheios ++
@@ -91,7 +91,7 @@ function deuEmpate(){
         }
     }
     
-    if(espacosCheios === tabuleiro.length * tabuleiro[linha + 1].length && novavitoria() === false){
+    if(espacosCheios === (tabuleiro.length - 1) * tabuleiro[linha + 1].length && novavitoria() === false){
         empate = true
     }
     return empate
