@@ -53,19 +53,39 @@ function condicaoVitoria() {
 
 function deuEmpate(){
     let vitoria = condicaoVitoria()
-    let linha
-    let coluna
+    let linha = tabuleiro.length -1
+    let coluna = tabuleiro[linha].length -1
     let empate = false
     let espacosCheios = 0
-    for (linha = tabuleiro.length -1; linha >= 0; linha --) {
-        for (coluna = tabuleiro[linha].length -1; coluna >= 0; coluna --) {
+    for (linha; linha >= 0; linha --) {
+        for (coluna; coluna >= 0; coluna --) {
             if(tabuleiro[linha][coluna] !== " "){
                 espacosCheios ++
             }
         }
     }
-    if(espacosCheios === tabuleiro.length * tabuleiro[linha].length && vitoria === false){
+    
+    if(espacosCheios === tabuleiro.length * tabuleiro[linha + 1].length && vitoria === false){
         empate = true
     }
     return empate
+}
+
+function criaTelaFinal(vitoria, deuEmpate){
+    let div = document.querySelector(".tela-resultado")
+    let botaoJogaNovamente = document.getElementById("#botao-reset")
+    if(vitoria === true){
+        
+        //cria tela vitoria
+        div.classList.add("vitoria")
+        div.classList.remove("hidden")
+
+    }
+
+    if(deuEmpate === true){
+        //cria tela empate
+        div.classList.add("empate")
+        div.classList.remove("hidden")
+        
+    }
 }
