@@ -1,3 +1,91 @@
+const condicaohorizontal =()=>{
+    let resultado = false
+    for (let linha = tabuleiro.length -1; linha >= 0; linha --){
+        for (let coluna = 0; coluna < tabuleiro[linha].length; coluna ++){
+            if ( tabuleiro[linha][coluna] === jogador 
+                && tabuleiro[linha][coluna + 1] === jogador 
+                && tabuleiro[linha][coluna + 2] === jogador 
+                && tabuleiro[linha][coluna + 3] === jogador 
+                ){  resultado = true
+                    console.log(resultado + ' nova horizontal')
+                }
+            }
+    }
+    return resultado
+}
+
+const condicaovertical = () =>{
+    let resultado = false
+    for (let linha = tabuleiro.length-1 ; linha >= 0; linha--){
+        for (let coluna = 0; coluna < tabuleiro[linha].length; coluna ++){
+            if ( tabuleiro[linha][coluna] === jogador 
+                && tabuleiro[linha - 1][coluna] === jogador 
+                && tabuleiro[linha - 2][coluna] === jogador 
+                && tabuleiro[linha - 3][coluna] === jogador 
+                ) {
+                    resultado = true
+                    console.log(resultado +' nova vertical')
+                }
+        }
+}
+ return resultado
+}
+// condicaohorizontal()
+
+const diagonalpradireita=()=>{
+    let resultado = false
+    for (let linha = tabuleiro.length -1; linha >= 0; linha --){
+        for (let coluna = 0; coluna < tabuleiro[linha].length; coluna ++){
+            if ( tabuleiro[linha][coluna] === jogador 
+                && tabuleiro[linha - 1][coluna + 1] === jogador 
+                && tabuleiro[linha - 2][coluna + 2] === jogador 
+                && tabuleiro[linha - 3][coluna + 3] === jogador 
+                ) {
+                    resultado = true
+                    console.log(resultado +' nova diagonal direita')
+                }
+        }
+}
+return resultado
+}
+
+
+const diagonalpraesquerda=()=>{
+    let resultado = false
+
+    for (let linha = tabuleiro.length -1; linha >= 0; linha --) {
+        for (let coluna = tabuleiro[linha].length -1; coluna >= 0; coluna --) {
+           
+            if ( tabuleiro[linha][coluna] === jogador 
+                && tabuleiro[linha - 1][coluna - 1] === jogador 
+                && tabuleiro[linha - 2][coluna - 2] === jogador 
+                && tabuleiro[linha - 3][coluna - 3] === jogador 
+                ) {
+                    resultado = true
+                    console.log(resultado +' nova diagonal esquerda')
+                }
+        }
+
+}
+return resultado
+}
+
+const novavitoria = (horizontal, vertical, diagonalA, diagonalB)=>{
+    if(horizontal === true){return true}
+    else if(vertical === true){return true}
+    else if(diagonalA === true){return true}
+    else if(diagonalB === true){return true}
+}
+
+
+
+
+
+
+
+
+
+
 
 function condicaoVitoria() {
     let vitoria = false
