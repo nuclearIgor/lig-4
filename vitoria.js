@@ -99,20 +99,27 @@ function deuEmpate(){
 
 function criaTelaFinal(vitoria, deuEmpate){
     let div = document.querySelector(".tela-resultado")
-    let botaoJogaNovamente = document.getElementById("#botao-reset")
+    let botaoJogaNovamente = document.getElementById("botao-reset")
     if(vitoria === true){
         
         //cria tela vitoria
-        div.classList.add("vitoria")
+
+        div.firstElementChild.classList.remove("hidden")
         div.classList.remove("hidden")
+        botaoJogaNovamente.classList.add("botaoJogarNovamente")
+        botaoJogaNovamente.classList.remove("botao-reset")
+
+
 
         return div
     }
 
     if(deuEmpate === true){
         //cria tela empate
-        div.classList.add("empate")
+        div.lastElementChild.classList.remove("hidden")
         div.classList.remove("hidden")
+        botaoJogaNovamente.classList.add("botaoJogarNovamente")
+        botaoJogaNovamente.classList.remove("botao-reset")
         
         return div
     }

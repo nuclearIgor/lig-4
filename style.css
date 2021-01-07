@@ -23,11 +23,20 @@ body {
 }
 
 .vitoria {
-
+    height: 300px;
+    width: 300px;
+    color: burlywood;
+    background-color: darkgreen;
+    z-index: 2;
 }
 
-.empate {
 
+
+.empate {
+    height: 300px;
+    width: 300px;
+    background-color: darkred;
+    z-index: 2;
 }
 
 .fundoStart {
@@ -42,7 +51,7 @@ body {
 }
 
 .hidden {
-    visibility: hidden;
+    display: none;
 }
 
 .fundoStart .nomeJogo {
@@ -154,6 +163,19 @@ body {
 
 .botao-reset:hover {
     background-color: #233ab9;
+}
+.botaoJogarNovamente {
+    
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    background-color:#211a41;
+    cursor: pointer;
+    color: cornsilk;
+    font-size: 1rem;
+    z-index: 2;
+    position: absolute;
 }
 
 #creditos {
