@@ -77,7 +77,7 @@ const resetaJogo = () => {
     jogador = "P1"
     exibeturnoatual()
 
-
+    jogadas = 0
    
 }
 
