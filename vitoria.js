@@ -70,11 +70,11 @@ const diagonalpraesquerda=()=>{
 return resultado
 }
 
-const novavitoria = (horizontal, vertical, diagonalA, diagonalB)=>{
-    if(condicaohorizontal() === true){return true}
-    else if(condicaovertical() === true){return true}
-    else if(diagonalpradireita() === true){return true}
-    else if(diagonalpraesquerda() === true){return true}
+const novavitoria = ()=>{
+    if(condicaohorizontal()){return true}
+    else if(condicaovertical()){return true}
+    else if(diagonalpradireita()){return true}
+    else if(diagonalpraesquerda()){return true}
 }
 
 function deuEmpate(){

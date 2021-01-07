@@ -33,6 +33,7 @@ function soltaDisco(e){
     // novavitoria()
     criaTelaFinal(novavitoria(), deuEmpate())
     trocaJogador()
+    exibeturnoatual()
     incrementadordejogadas()
     
 }
