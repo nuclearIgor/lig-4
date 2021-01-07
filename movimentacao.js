@@ -6,6 +6,7 @@ const tabuleiro = [
     [" "," "," "," "," "," "," "],
     [" "," "," "," "," "," "," "]
 ]
+
 function criaColunas(){
     const colunas = []
     for(let i = 0; i < 7; i ++){
@@ -57,9 +58,11 @@ function soltaDisco(e){
     colunaPai.appendChild(disco)
     condicaoVitoria()
     trocaJogador()
+    incrementadordejogadas()
     
 }
 criaColunas()
 implementaColunasNoDom()
 addHandlerNasColunas()
+
 
