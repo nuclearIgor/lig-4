@@ -103,13 +103,13 @@ function criaTelaFinal(vitoria, deuEmpate){
     if(vitoria === true){
         
         //cria tela vitoria
-
         div.firstElementChild.classList.remove("hidden")
         div.classList.remove("hidden")
         botaoJogaNovamente.classList.add("botaoJogarNovamente")
         botaoJogaNovamente.classList.remove("botao-reset")
 
 
+        
 
         return div
     }
