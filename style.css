@@ -27,13 +27,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    height: 400px;
+    justify-content: center;
+    height: 480px;
     width: 500px;
     color: burlywood;
-    background-color: #2f2f71;
+    background-color: #251d4b;
     z-index: 2;
     margin: 0 auto;
+    border: 2px solid #8805ff;
+    border-radius: 50px;
 }
 
 .empate {
@@ -220,17 +222,19 @@ body {
     width: 150px;
     border: none;
     border-radius: 5px;
-    background-color:#211a41;
+    background-color: #085659;
     cursor: pointer;
-    color: cornsilk;
+    color: #92f9b2;
     font-size: 1rem;
     z-index: 2;
     position: absolute;
     margin-top: -250px;
+    border: 1px solid #27e9ab;
 }
 
 .botaoJogarNovamente:hover {
-    background-color: #2f216e;
+    background-color: #0c6f72;
+    color: #ffffff;
 }
 
 #creditos {
@@ -253,3 +257,79 @@ body {
     from {transform: translate(0px,0px)}
     to {transform: translate(0px, -700px)}
   }
+
+
+ @media screen and (max-width: 750px) {
+
+}
+
+@media screen and (max-width: 450px) {
+    
+    #info-do-jogo {
+        width: 300px;
+        height: 90px;
+        margin: 10px;
+        align-items: center;
+        margin: 10px auto;
+    }
+
+    #turno {
+        width: 150px;
+        height: 80px;
+        align-items: center;
+    }
+
+    #turno::before {
+        font-size: .9rem;
+    }
+
+    #turno > .P1::before {
+        font-size: .8rem;
+    }
+
+    #turno > .P2::before{
+        font-size: .8rem;
+    }
+    #contadordejogadas {
+        font-size: 1.9rem;
+        height: 80px;
+    }
+
+    #contadordejogadas::before {
+        font-size: 1rem;
+    }
+
+    #turno > .P1::before {
+        margin-left: -60px;
+    }
+
+    #turno > .P2::before {
+        margin-left: -60px;
+    }
+
+    .filler {
+        width: 300px;
+        height: 360px;
+    }
+
+    .colunafiller {
+        width: 50px;
+    }
+
+    .circulofiller {
+        height: 50px;
+    }
+
+    .fundo {
+        width: 300px;
+        height: 360px;
+    }
+    .disco {
+        width: 43px;
+        height: 50px;
+    }
+
+    .botao-start {
+        top: 70%;
+    }
+}
