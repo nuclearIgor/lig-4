@@ -59,7 +59,7 @@ const resetaJogo = () => {
     for(let i = 0; i < todasColunas.length; i++) {
         todasColunas[i].innerHTML = ''
     }
-
+    addHandlerNasColunas()
 
    
 }

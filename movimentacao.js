@@ -30,8 +30,8 @@ function soltaDisco(e){
     if(colunaPai.childElementCount === 6){
         colunaPai.removeEventListener('click', soltaDisco)
     }
-    novavitoria(condicaohorizontal(), condicaovertical(), diagonalpradireita(), diagonalpraesquerda())
-    // criaTelaFinal(condicaoVitoria(), deuEmpate())
+    // novavitoria()
+    criaTelaFinal(novavitoria(), deuEmpate())
     trocaJogador()
     incrementadordejogadas()
     
