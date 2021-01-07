@@ -23,6 +23,11 @@ body {
 }
 
 .vitoria {
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     height: 400px;
     width: 500px;
     color: burlywood;
@@ -237,8 +242,8 @@ body {
 
  
 .coluna > .disco{
-    animation-timing-function: ease-in;
     animation-name: queda;
+    animation-timing-function: ease-in;
     animation-duration: 1s;
     animation-direction: reverse;
   }
