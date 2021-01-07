@@ -103,7 +103,6 @@ function criaTelaFinal(vitoria, deuEmpate){
     if(vitoria === true){
         
         //cria tela vitoria
-
         div.firstElementChild.classList.remove("hidden")
         div.firstElementChild.innerText = `Você venceu!!`
         div.firstElementChild.appendChild(criaDisco(jogador))
@@ -112,6 +111,7 @@ function criaTelaFinal(vitoria, deuEmpate){
         botaoJogaNovamente.classList.remove("botao-reset")
 
 
+        
 
         return div
      }
