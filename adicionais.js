@@ -89,3 +89,9 @@ const jogadasnatela = ()=>{
     return espaconatela.innerText = jogadas
 }
 
+const turno = document.getElementById('turno')
+turno.appendChild(criaDisco(jogador))
+
+const exibeturnoatual = ()=>{
+   return turno.firstChild.replaceWith(criaDisco(jogador))
+}
