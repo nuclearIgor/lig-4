@@ -120,7 +120,10 @@ function criaTelaFinal(vitoria, deuEmpate){
         //cria tela empate
         div.lastElementChild.classList.remove("hidden")
         div.classList.remove("hidden")
-        div.firstElementChild.innerText = `Empate!!`
+        div.lastElementChild.innerText = `Empate!!`
+        div.lastElementChild.appendChild(criaDisco(jogador))
+        trocaJogador()
+        div.lastElementChild.appendChild(criaDisco(jogador))
         botaoJogaNovamente.classList.add("botaoJogarNovamente")
         botaoJogaNovamente.classList.remove("botao-reset")
         
