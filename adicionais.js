@@ -61,6 +61,23 @@ const resetaJogo = () => {
     }
     addHandlerNasColunas()
 
+    let div = document.querySelector(".tela-resultado")
+    let botaoJogaNovamente = document.getElementById("botao-reset")
+
+    div.firstElementChild.classList.add("hidden")
+    div.classList.add("hidden")
+    botaoJogaNovamente.classList.remove("botaoJogarNovamente")
+    botaoJogaNovamente.classList.add("botao-reset")
+
+    //reseta contador de jogadas
+    let contadorJogadas = document.getElementById("contadordejogadas")
+    contadorJogadas.textContent = 0
+
+    //reseta disco turno jogador
+    jogador = "P1"
+    exibeturnoatual()
+
+
    
 }
 
