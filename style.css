@@ -17,20 +17,19 @@ body {
 .tela-resultado {
     position: absolute;
     z-index: 1;
-    background-color: blueviolet;
+    background-color: rgb(60 59 61 / 88%);
     height: 100%;
     width: 100%;
 }
 
 .vitoria {
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 500px;
     color: burlywood;
-    background-color: darkgreen;
+    background-color: #2f2f71;
     z-index: 2;
+    margin: 0 auto;
 }
-
-
 
 .empate {
     height: 300px;
@@ -64,10 +63,50 @@ body {
 }
 
 #info-do-jogo {
-    height: 100px;
+    height: 150px;
     width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
     background-color: rgb(80, 80, 105);
     margin: 10px auto;
+}
+
+#contadordejogadas::before {
+    content: "Numero de jogadas";
+    font-size: 2rem;
+}
+
+#turno {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#turno::before {
+    content: "Turno atual";
+    font-size: 2rem;
+    color: bisque;
+}
+
+#turno > .P1::before {
+    content: "Player 1";
+    color: bisque;
+    margin-left: -60px;
+}
+
+#turno > .P2::before {
+    content: "Player 2";
+    color: bisque;
+    margin-left: -60px;
+}
+
+#contadordejogadas {
+    font-size: 3rem;
+    color: bisque;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .filler {
@@ -122,8 +161,14 @@ body {
 .P1 {
     background-color: #ff1a1a;
 }
+
 .P2 {
     background-color: #dda213;
+}
+
+#botoes {
+    display: flex;
+    justify-content: center;
 }
 
 .botao-start {
@@ -162,10 +207,10 @@ body {
 }
 
 .botao-reset:hover {
-    background-color: #233ab9;
+    background-color: #2f216e;
 }
+
 .botaoJogarNovamente {
-    
     height: 50px;
     width: 150px;
     border: none;
@@ -176,6 +221,11 @@ body {
     font-size: 1rem;
     z-index: 2;
     position: absolute;
+    margin-top: -250px;
+}
+
+.botaoJogarNovamente:hover {
+    background-color: #2f216e;
 }
 
 #creditos {
