@@ -1,3 +1,4 @@
+
 html, body, section, main, div, h1, h2 {
     margin: 0;
     padding: 0;
@@ -11,6 +12,22 @@ body {
 #main {
     display: flex;
     justify-content: center;
+}
+
+.tela-resultado {
+    position: absolute;
+    z-index: 1;
+    background-color: blueviolet;
+    height: 100%;
+    width: 100%;
+}
+
+.vitoria {
+
+}
+
+.empate {
+
 }
 
 .fundoStart {
