@@ -89,9 +89,7 @@ adicionaEventoReset()
 
 const removeEventoReset = () => {
     let botaoReset = document.querySelector('#botao-reset')
-
     botaoReset.removeEventListener('click', resetaJogo)
-
 }
 
 
@@ -102,7 +100,6 @@ const incrementadordejogadas = () => {
         jogadas+=1
         return jogadasnatela()
     }
-
 }
 
 const jogadasnatela = ()=>{
@@ -113,6 +110,6 @@ const jogadasnatela = ()=>{
 const turno = document.getElementById('turno')
 turno.appendChild(criaDisco(jogador))
 
-const exibeturnoatual = ()=>{
+const exibeturnoatual = () => {
    return turno.firstChild.replaceWith(criaDisco(jogador))
 }

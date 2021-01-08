@@ -1,4 +1,4 @@
-const condicaohorizontal =()=>{
+const condicaohorizontal = () => {
     let resultado = false
     for (let linha = tabuleiro.length -1; linha >= 0; linha --){
         for (let coluna = 0; coluna < tabuleiro[linha].length; coluna ++){
@@ -14,7 +14,7 @@ const condicaohorizontal =()=>{
     return resultado
 }
 
-const condicaovertical = () =>{
+const condicaovertical = () => {
     let resultado = false
     for (let linha = tabuleiro.length-1 ; linha >= 0; linha--){
         for (let coluna = 0; coluna < tabuleiro[linha].length; coluna ++){
@@ -27,12 +27,13 @@ const condicaovertical = () =>{
                     console.log(resultado +' nova vertical')
                 }
         }
-}
- return resultado
-}
-// condicaohorizontal()
+    }
 
-const diagonalpradireita=()=>{
+ return resultado
+
+}
+
+const diagonalpradireita = () => {
     let resultado = false
     for (let linha = tabuleiro.length -1; linha >= 0; linha --){
         for (let coluna = 0; coluna < tabuleiro[linha].length; coluna ++){
@@ -45,12 +46,14 @@ const diagonalpradireita=()=>{
                     console.log(resultado +' nova diagonal direita')
                 }
         }
-}
-return resultado
+    }
+
+    return resultado
+
 }
 
 
-const diagonalpraesquerda=()=>{
+const diagonalpraesquerda = () => {
     let resultado = false
 
     for (let linha = tabuleiro.length -1; linha >= 0; linha --) {
@@ -67,17 +70,19 @@ const diagonalpraesquerda=()=>{
         }
 
     }
-return resultado
+
+    return resultado
+
 }
 
-const novavitoria = ()=>{
+const novavitoria = () => {
     if(condicaohorizontal()){return true}
     else if(condicaovertical()){return true}
     else if(diagonalpradireita()){return true}
     else if(diagonalpraesquerda()){return true}
 }
 
-function deuEmpate(){
+function deuEmpate() {
     let empate = false
     let espacosCheios = 0
     for (let linha = tabuleiro.length -1; linha > 0; linha --) { 
@@ -92,12 +97,10 @@ function deuEmpate(){
         empate = true
     }
 
-    console.log(espacosCheios)
-    console.log(empate)
     return empate
 }
 
-function criaTelaFinal(){
+function criaTelaFinal() {
     let vitoria = novavitoria()
     let deuempate = deuEmpate()
     let div = document.querySelector(".tela-resultado")
@@ -111,9 +114,6 @@ function criaTelaFinal(){
         div.classList.remove("hidden")
         botaoJogaNovamente.classList.add("botaoJogarNovamente")
         botaoJogaNovamente.classList.remove("botao-reset")
-
-
-        
 
         return div
      }
