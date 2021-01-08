@@ -97,7 +97,9 @@ function deuEmpate(){
     return empate
 }
 
-function criaTelaFinal(vitoria, deuEmpate){
+function criaTelaFinal(){
+    let vitoria = novavitoria()
+    let deuempate = deuEmpate()
     let div = document.querySelector(".tela-resultado")
     let botaoJogaNovamente = document.getElementById("botao-reset")
     if(vitoria === true){
@@ -116,7 +118,7 @@ function criaTelaFinal(vitoria, deuEmpate){
         return div
      }
 
-    if(deuEmpate === true){
+    if(deuempate === true){
         //cria tela empate
         div.lastElementChild.classList.remove("hidden")
         div.classList.remove("hidden")
