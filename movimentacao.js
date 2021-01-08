@@ -31,6 +31,7 @@ function soltaDisco(e){
     //     colunaPai.removeEventListener('click', soltaDisco)
     // }
     removeHandlerNasColunas()
+    removeEventoReset()
 
 
     // novavitoria()
@@ -57,6 +58,7 @@ function esperaDiscoCair(){
     exibeturnoatual()
     incrementadordejogadas()
     addHandlerNasColunas()
+    adicionaEventoReset()
 }
 
 

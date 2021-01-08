@@ -85,12 +85,19 @@ const adicionaEventoReset = () => {
     botaoReset.addEventListener('click', resetaJogo)
 
 }
-
 adicionaEventoReset()
+
+const removeEventoReset = () => {
+    let botaoReset = document.querySelector('#botao-reset')
+
+    botaoReset.removeEventListener('click', resetaJogo)
+
+}
+
 
 let jogadas = 0
 
-const incrementadordejogadas=()=>{
+const incrementadordejogadas = () => {
     if(jogadas < tabuleiro.length * tabuleiro[0].length){
         jogadas+=1
         return jogadasnatela()
