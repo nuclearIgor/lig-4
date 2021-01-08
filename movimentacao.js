@@ -27,15 +27,36 @@ function soltaDisco(e){
     let disco = criaDisco(jogador)
 
     colunaPai.appendChild(disco)
-    if(colunaPai.childElementCount === 6){
-        colunaPai.removeEventListener('click', soltaDisco)
-    }
+    // if(colunaPai.childElementCount === 6){
+    //     colunaPai.removeEventListener('click', soltaDisco)
+    // }
+    removeHandlerNasColunas()
+
+
     // novavitoria()
+
+    // criaTelaFinal(novavitoria(), deuEmpate())
+    // trocaJogador()
+    // exibeturnoatual()
+    // incrementadordejogadas()
+
+
+    // setTimeout(criaTelaFinal, 1000)
+    // setTimeout(trocaJogador, 1000)
+    // setTimeout(exibeturnoatual, 1000)
+    // setTimeout(incrementadordejogadas, 1000)
+
+    setTimeout(esperaDiscoCair, 1000);
+    
+    
+}
+
+function esperaDiscoCair(){
     criaTelaFinal(novavitoria(), deuEmpate())
     trocaJogador()
     exibeturnoatual()
     incrementadordejogadas()
-    
+    addHandlerNasColunas()
 }
 
 

@@ -31,6 +31,13 @@ function addHandlerNasColunas(){
     }
 }
 
+function removeHandlerNasColunas(){
+    let colunas = document.querySelectorAll(".coluna")
+    for(i = 0; i < colunas.length; i ++){
+        colunas[i].removeEventListener("click", soltaDisco)
+    }
+}
+
 const criafundo3d = ()=> {
     let filler = document.querySelector('.filler')
     
