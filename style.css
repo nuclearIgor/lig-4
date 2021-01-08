@@ -169,9 +169,9 @@ body {
     margin: 0 auto;
     height: 100px;
     width: 100%;
-    border: 2px solid #607D8B;
-    background-color: rgb(47 124 145 / 13%);
-    border-radius: 50%;
+    background-color: rgb(20 17 60 / 21%);
+    border: 10px double rgb(223 223 223 / 4%);
+    border-radius: 40px 40px 40px 40px;
 }
 
 .P1 {
