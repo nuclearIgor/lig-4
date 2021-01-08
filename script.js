@@ -8,7 +8,7 @@ const tabuleiro = [
     [" "," "," "," "," "," "," "]
 ]
 
-function criaColunas(){
+function criaColunas() {
     const colunas = []
     for(let i = 0; i < 7; i ++){
         let coluna = document.createElement("div")
@@ -19,26 +19,27 @@ function criaColunas(){
     return colunas
 }
 
-function implementaColunasNoDom(){
+function implementaColunasNoDom() {
     const colunas = criaColunas()
     let paiDasColunas = document.querySelector(".fundo")
     colunas.forEach((coluna) => paiDasColunas.appendChild(coluna))
 }
-function addHandlerNasColunas(){
+
+function addHandlerNasColunas() {
     let colunas = document.querySelectorAll(".coluna")
     for(i = 0; i < colunas.length; i ++){
         colunas[i].addEventListener("click", soltaDisco)
     }
 }
 
-function removeHandlerNasColunas(){
+function removeHandlerNasColunas() {
     let colunas = document.querySelectorAll(".coluna")
     for(i = 0; i < colunas.length; i ++){
         colunas[i].removeEventListener("click", soltaDisco)
     }
 }
 
-const criafundo3d = ()=> {
+const criafundo3d = () => {
     let filler = document.querySelector('.filler')
     
     for(let i = 0; i < 7; i++){
@@ -52,7 +53,6 @@ const criafundo3d = ()=> {
         filler.appendChild(coluna)
     }
 }
-
 
 criafundo3d()
 criaColunas()
