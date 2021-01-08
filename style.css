@@ -189,7 +189,9 @@ body {
 #botoes {
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
 }
+
 
 .botao-start {
     position: absolute;
@@ -254,12 +256,23 @@ body {
 }
 
 #creditos {
-    height: 100px;
     width: 700px;
-    background-color: rgb(80, 80, 105);
-    margin: 0 auto;
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    color: rgb(0 255 233 / 61%);
+    height: 5vh;
 }
 
+#creditos ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    width: 100%;
+}
  
 .coluna > .disco{
     animation-name: queda;
