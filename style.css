@@ -24,13 +24,13 @@ body {
 }
 
 .vitoria {
-    font-size: 4rem;
+    font-size: 3.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 480px;
-    width: 500px;
+    height: 55vh;
+    width: 60vw;
     color: burlywood;
     background-color: #251d4b;
     z-index: 2;
@@ -96,7 +96,7 @@ body {
 #turno {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
 }
 
 #turno::before {
@@ -108,13 +108,13 @@ body {
 #turno > .P1::before {
     content: "Player 1";
     color: bisque;
-    margin-left: -60px;
+    margin-left: -70px;
 }
 
 #turno > .P2::before {
     content: "Player 2";
     color: bisque;
-    margin-left: -60px;
+    margin-left: -70px;
 }
 
 #contadordejogadas {
@@ -236,8 +236,8 @@ body {
 }
 
 .botaoJogarNovamente {
-    height: 50px;
-    width: 150px;
+    height: 5vh;
+    width: 25vw;
     border: none;
     border-radius: 5px;
     background-color: #085659;
@@ -246,7 +246,7 @@ body {
     font-size: 1rem;
     z-index: 2;
     position: absolute;
-    margin-top: -250px;
+    margin-top: -50px;
     border: 1px solid #27e9ab;
 }
 
@@ -288,11 +288,68 @@ body {
   }
 
 
- @media screen and (max-width: 750px) {
+@media screen and (max-width: 750px) {
+    
+    #info-do-jogo {
+        width: 600px;
+        height: 120px;
+        margin: 10px;
+        align-items: center;
+        margin: 10px auto;
+    }
 
+    #turno {
+        width: 150px;
+        height: 110px;
+        align-items: center;
+    }
+
+    #turno::before {
+        font-size: 1.1rem;
+    }
+
+    #turno > .P1::before {
+        font-size: 1rem;
+        margin-left: -70px
+    }
+
+    #turno > .P2::before{
+        font-size: 1rem;
+        margin-left: -70px;
+    }
+    #contadordejogadas {
+        font-size: 2.5rem;
+        height: 80px;
+    }
+
+    #contadordejogadas::before {
+        font-size: 1rem;
+    }
+
+    .filler {
+        width: 600px;
+        height: 560px;
+    }
+
+    .circulofiller {
+        height: 90px;
+    }
+
+    .fundo {
+        width: 600px;
+        height: 560px;
+    }
+    .disco {
+        width: 83px;
+        height: 90px;
+    }
+
+    .botao-start {
+        top: 70%;
+    }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
     
     #info-do-jogo {
         width: 300px;
@@ -314,11 +371,14 @@ body {
 
     #turno > .P1::before {
         font-size: .8rem;
+        margin-left: -60px;
     }
 
     #turno > .P2::before{
         font-size: .8rem;
+        margin-left: -60px;
     }
+
     #contadordejogadas {
         font-size: 1.9rem;
         height: 80px;
@@ -326,14 +386,6 @@ body {
 
     #contadordejogadas::before {
         font-size: 1rem;
-    }
-
-    #turno > .P1::before {
-        margin-left: -60px;
-    }
-
-    #turno > .P2::before {
-        margin-left: -60px;
     }
 
     .filler {
@@ -353,6 +405,23 @@ body {
         width: 300px;
         height: 360px;
     }
+
+    .fundoStart .nomeJogo {
+        font-size: 3rem;
+    }
+
+    .vitoria {
+        font-size: 2rem;
+        height: 45vh;
+        width: 80vw;
+    }
+
+    .empate {
+        font-size: 2rem;
+        height: 55vh;
+        width: 80vw;
+    }
+
     .disco {
         width: 43px;
         height: 50px;
@@ -360,5 +429,9 @@ body {
 
     .botao-start {
         top: 70%;
+    }
+
+    .botaoJogarNovamente {
+        margin-top: 50px;
     }
 }
