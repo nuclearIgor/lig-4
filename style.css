@@ -176,10 +176,14 @@ body {
 
 .P1 {
     background-color: #ff1a1a;
+    border: 10px double rgb(212 8 46 / 65%);
+    border-radius: 40px 40px 40px 40px;
 }
 
 .P2 {
     background-color: #dda213;
+    border: 10px double rgb(212 55 8 / 22%);
+    border-radius: 40px 40px 40px 40px;
 }
 
 #botoes {
